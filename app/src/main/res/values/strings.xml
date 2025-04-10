@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TestOne</string>
+    <string name="textView1">Esta es una cadena de pruena en donde veremos como el contenedor se ajusta a nuestra pantalla, ya sea en portrait o en landscape, dependerá también si solicitamos que se convierta en multilínea
+    </string>
+</resources>
