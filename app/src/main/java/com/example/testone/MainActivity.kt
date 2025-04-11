@@ -3,6 +3,7 @@ package com.example.testone
 import android.os.Bundle
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -18,7 +19,7 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val crashButton = Button(this)
+        /*val crashButton = Button(this)
         crashButton.text = "Test Crash"
         crashButton.setOnClickListener {
             throw RuntimeException("Test Crash") // Force a crash
@@ -26,6 +27,12 @@ class MainActivity : AppCompatActivity() {
 
         addContentView(crashButton, ViewGroup.LayoutParams(
             ViewGroup.LayoutParams.MATCH_PARENT,
-            ViewGroup.LayoutParams.WRAP_CONTENT))
+            ViewGroup.LayoutParams.WRAP_CONTENT))*/
+
+        val tvkey1: TextView = findViewById(R.id.tv_key1)
+        val tvvalue1: TextView = findViewById(R.id.tv_value1)
+
+        tvkey1.text = "key desde código"
+        tvvalue1.text = "Valor desde código"
     }
 }
